@@ -61,9 +61,7 @@ function renderSelectorGrid() {
     card.className = `card ${center.id === activeCenterId ? 'active' : ''}`;
     card.setAttribute('data-id', center.id);
     
-    const pricePerPyeong = Math.round(center.price_per_sqm * 3.30578);
-    const formattedPriceSqm = Number(center.price_per_sqm).toLocaleString();
-    const formattedPricePyeong = Math.round(pricePerPyeong / 10000);
+    // 평당가 대신 유선 문의 안내 문구 적용 (방안 B 선택 반영)
     const statusClass = center.status === '분양중' ? 'status-active' : 'status-pending';
     
     const featuresHTML = center.features
@@ -71,7 +69,7 @@ function renderSelectorGrid() {
           ${center.features.slice(0, 2).map(f => `<li>${f}</li>`).join('')}
          </ul>`
       : '';
-
+ 
     card.innerHTML = `
       <div class="card-image-container">
         <img src="${center.image}" alt="${center.name}" loading="lazy" />
@@ -86,8 +84,8 @@ function renderSelectorGrid() {
             <span class="info-value highlight">${center.available}개 호실</span>
           </div>
           <div class="info-row">
-            <span class="info-label">평당가</span>
-            <span class="info-value">약 ${formattedPricePyeong} 만원</span>
+            <span class="info-label">분양가</span>
+            <span class="info-value" style="color: #f97316; font-weight: 700;">상세 문의 (유선 안내)</span>
           </div>
         </div>
         <button class="btn-detail">선택 및 상세보기</button>
