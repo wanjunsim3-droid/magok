@@ -92,7 +92,7 @@
       "status": "분양예정",
       "available": 5,
       "price_per_sqm": 3200000,
-      "image": "assets/images/newv_1.png",
+      "image": "assets/images/newv_main.png",
       "detailPage": "center.html?id=newcloudhill",
       "features": [
         "서울주택공사(SH) 공모사업의 높은 신뢰성과 안정성",
@@ -113,16 +113,20 @@
       },
       "gallery": [
         {
-          "tab": "단지 조감도",
-          "image": "assets/images/newv_1.png"
-        },
-        {
-          "tab": "입지 프리미엄",
-          "image": "assets/images/newv_2.png"
+          "tab": "대표 조감도",
+          "image": "assets/images/newv_main.png"
         },
         {
           "tab": "사업 상세개요",
-          "image": "assets/images/newv_6.png"
+          "image": "assets/images/newv_outline.png"
+        },
+        {
+          "tab": "입지 프리미엄",
+          "image": "assets/images/newv_location.png"
+        },
+        {
+          "tab": "분양 및 임대현황",
+          "image": "assets/images/newv_status.png"
         }
       ]
     },
@@ -132,7 +136,7 @@
       "status": "분양중",
       "available": 10,
       "price_per_sqm": 2950000,
-      "image": "assets/images/d18b_1.png",
+      "image": "assets/images/d18b_main.png",
       "detailPage": "center.html?id=d18b",
       "features": [
         "마곡지구 마지막 9호선 역세권 지식산업센터",
@@ -150,12 +154,20 @@
       },
       "gallery": [
         {
-          "tab": "조감도 및 입지",
-          "image": "assets/images/d18b_1.png"
+          "tab": "대표 조감도",
+          "image": "assets/images/d18b_main.png"
         },
         {
           "tab": "사업개요 안내",
-          "image": "assets/images/d18b_2.png"
+          "image": "assets/images/d18b_outline.png"
+        },
+        {
+          "tab": "광역 입지환경",
+          "image": "assets/images/d18b_location.png"
+        },
+        {
+          "tab": "입주가능 업종안내",
+          "image": "assets/images/d18b_industry.png"
         }
       ]
     }
