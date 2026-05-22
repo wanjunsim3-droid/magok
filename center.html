@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id') || '';
+    window.location.replace('index.html' + (id ? '?id=' + id : ''));
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>지식산업센터 상세 정보 | 마곡산단 공식 분양 대행</title>
+  <meta name="description" content="마곡지구 지식산업센터의 상세 스펙, 용도별 구성, 도면 및 관련 비교 자료를 상세히 확인해보세요." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1><a href="index.html" id="logo-link">마곡산단 공식 분양 대행</a></h1>
+    <div class="header-right">
+      <a href="tel:1666-5984" class="header-phone">📞 대표번호 1666-5984</a>
+      <button id="theme-toggle" aria-label="다크/라이트 전환">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="back-btn-container">
+      <a href="index.html" class="btn-back" id="back-to-home">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        메인 화면으로 돌아가기
+      </a>
+    </div>
+
+    <div class="detail-layout" id="detail-content">
+      <!-- JS를 통해 동적으로 콘텐츠가 로드됩니다. -->
+      <div style="text-align: center; grid-column: span 2; padding: 4rem 0;">
+        <p>상세 정보를 불러오는 중입니다...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 마곡산단 공식 분양 대행 | 대표번호: 1666-5984</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">개인정보책임자: 심완준 | 연락처: 010-2235-8245</p>
+  </footer>
+
+  <!-- 플로팅 버튼 그룹 -->
+  <div class="floating-btn-group">
+    <!-- 플로팅 카카오톡 문의 버튼 -->
+    <a href="https://open.kakao.com/o/sPlaceholder" target="_blank" class="floating-kakao-btn" aria-label="카카오톡 1:1 상담">
+      <span class="phone-icon">💬</span>
+      <span class="phone-text">카카오톡 1:1 상담</span>
+    </a>
+    <!-- 플로팅 전화 문의 버튼 -->
+    <a href="tel:1666-5984" class="floating-call-btn" aria-label="전화 상담 연결">
+      <span class="pulse-ring"></span>
+      <span class="phone-icon">📞</span>
+      <span class="phone-text">대표번호 1666-5984</span>
+    </a>
+  </div>
+
+  <script src="assets/js/center.js?v=20260521_2"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# 최상위 루트 디렉토리의 대용량 원본 안내서 이미지 제외 (용량 초과 및 배포 불필요 방지)
+/*.png
+*.pdf
+photothumb.db
+
+# OS & 에디터 관련 파일
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
