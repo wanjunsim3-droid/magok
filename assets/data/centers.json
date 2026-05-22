@@ -6,7 +6,7 @@
       "status": "분양중",
       "available": 12,
       "price_per_sqm": 3000000,
-      "image": "assets/images/ipark_5.png",
+      "image": "assets/images/ipark_main.png",
       "detailPage": "center.html?id=ipark",
       "features": [
         "마곡지구 내 R&D형 최초의 지식산업센터",
@@ -28,7 +28,11 @@
       },
       "gallery": [
         {
-          "tab": "입지 및 사업개요",
+          "tab": "대표 조감도",
+          "image": "assets/images/ipark_main.png"
+        },
+        {
+          "tab": "사업개요 및 상세",
           "image": "assets/images/ipark_5.png"
         },
         {
